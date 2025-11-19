@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Cart</title>
+    <style>
+        .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 0.8rem;
+        }
+        .table th,
+        .table td {
+          padding: 0.6rem 0.9rem;
+          border-bottom: 1px solid rgba(0,0,0,0.06);
+          text-align: left;
+        }
+        .table thead th {
+          background: #fff4ee;
+          font-weight: 800;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            background-color: #e55c5c;
+        }
+    </style>
+</head>
+<body>
+      <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="logo">Flavour<span>Junction</span></div>
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="#">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn" type="button">Login</button>
+      </div>
+    </div>
+  </header>
+    <div>
+            <h3>Order Summary Table</h3>
+            <table class="table" aria-describedby="order-caption">
+              <caption id="order-caption" class="caption-top">Order 001 — Summary</caption>
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Qty</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Veg Biryani</td>
+                  <td>1</td>
+                  <td>₹220</td>
+                </tr>
+                <tr>
+                  <td>Cheese Burger</td>
+                  <td>2</td>
+                  <td>₹320</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="2">Total</td>
+                  <td>₹540</td>
+                </tr>
+              </tfoot>
+            </table>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  color: #222;
+  background: #fff8f4;
+  line-height: 1.45;
+  font-size: 16px;
+}
+.container {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 80;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+.logo {
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #222;
+}
+.logo span {
+  color: #ff603c;
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+.nav-links a {
+  color: #222;
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.nav-links a:hover {
+  background: #ffe6d8;
+}
+.header-actions .btn {
+  padding: 0.45rem 0.9rem;
+  border-radius: 20px;
+  border: 1px solid rgba(0,0,0,0.06);
+  background: #ffa155;
+  cursor: pointer;
+  font-weight: 700;
+}
+.hero {
+  padding: 2.2rem;
+  background-color: #ffc681;
+}
+.hero-content {
+  max-width: 860px;
+  animation: fadeIn 700ms ease;
+}
+.kicker {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  background: rgba(18, 6, 1, 0.12);
+  color: #ff0000;
+  border-radius: 20px;
+  font-weight: 700;
+}
+.hero-content h1 {
+  margin: 0.6rem;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.hero-content p {
+  margin: 0.6rem 0 1rem 0;
+  color: #666;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.search-bar {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+.search-bar input {
+  flex: 1;
+  padding: 0.65rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: #fff;
+}
+.search-bar button {
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  background: #ff6f3c;
+  border: none;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.search-bar button:hover {
+  background: #e55a2b;
+}
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.category-card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.07);
+  border-radius: 12px;
+  text-align: center;
+  padding: 0.6rem;
+}
+.category-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.category-card p {
+  font-weight: 700;
+  margin-top: 0.6rem;
+}
+.category-card:hover {
+  background: #fff3ec;
+  border-color: #ffceb8;
+}
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+.restaurant-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.8rem;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+.restaurant-card img {
+  width: 95px;
+  height: 95px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.restaurant-card .info h3 {
+  margin: 0;
+  font-weight: 800;
+}
+.restaurant-card .info p {
+  margin: 0.2rem 0 0 0;
+  color: #666;
+}
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background: #9ceb8e;
+  border-radius: 15px;
+  margin-top: 0.3rem;
+  font-weight: 700;
+}
+.restaurant-card:hover {
+  background: #fff6f1;
+  border-color: #ffdfcc;
+}
+.site-footer {
+  margin-top: 2rem;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  padding: 1.2rem 0;
+  text-align: center;
+  color: #666;
+}
+

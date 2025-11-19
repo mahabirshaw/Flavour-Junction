@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .contact-form fieldset {
+          border: 1px solid rgba(0,0,0,0.08);
+          border-radius: 10px;
+          padding: 0.8rem;
+        }
+        .contact-form legend {
+          font-weight: 800;
+        }
+        .contact-form label {
+          display: block;
+          margin-top: 0.6rem;
+          font-weight: 700;
+        }
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+          width: 100%;
+          padding: 0.6rem 0.8rem;
+          margin-top: 0.4rem;
+          border-radius: 8px;
+          border: 1px solid rgba(0,0,0,0.08);
+        }
+        .section-title {
+            font-weight: 800;
+            margin-bottom: 0.6rem;
+            position: relative;
+        }
+        .section-title::after {
+          content: "";
+          width: 48px;
+          height: 5px;
+          border-radius: 4px;
+          display: block;
+          margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="logo">Flavour<span>Junction</span></div>
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="#">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn" type="button">Login</button>
+      </div>
+    </div>
+  </header>
+    <section class="extras" aria-label="Forms, table and media examples">
+      <div class="container">
+        <h2 class="section-title">Contact & Demo Elements</h2>
+
+        <div class="grid-2">
+          <div>
+            <form action="#" method="post" class="contact-form">
+              <fieldset>
+                <legend>Contact Us</legend>
+
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required />
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <label for="reason">Reason</label>
+                <select id="reason" name="reason">
+                  <option value="">Choose</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="issue">Report an issue</option>
+                  <option value="other">Other</option>
+                </select>
+                <button type="submit" class="btn">Send</button>
+              </fieldset>
+            </form>
+</body>
+</html>
