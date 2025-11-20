@@ -1,79 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <title>Cart</title>
-    <style>
-        .table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 0.8rem;
-        }
-        .table th,
-        .table td {
-          padding: 0.6rem 0.9rem;
-          border-bottom: 1px solid rgba(0,0,0,0.06);
-          text-align: left;
-        }
-        .table thead th {
-          background: #fff4ee;
-          font-weight: 800;
-        }
-        .grid-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            background-color: #e55c5c;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flavour Junction — Cart</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+
+    .btn {
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .btn-order {
+      background: #ff6f3c;
+      color: #fff;
+      border: none;
+      margin-top: 20px;
+      margin-left:840px;
+    }
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+    .table th,
+    .table td {
+      padding: 10px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      text-align: left;
+    }
+    .table thead th {
+      background: #fff3ec;
+      font-weight: 700;
+    }
+    caption {
+      text-align: left;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .total-box {
+      margin-top: 14px;
+      padding: 14px;
+      border: 1px solid rgba(0,0,0,0.06);
+      border-radius: 8px;
+    }
+    .total-text {
+      font-weight: 800;
+      font-size: 1.1rem;
+    }
+
+    .actions {
+      margin-top: 12px;
+      display: flex;
+      gap: 10px;
+    }
+    .site-footer {
+      margin-top: 240px;
+      padding-top: 18px;
+      text-align: center;
+      color: #666;
+      border-top: 1px solid rgba(0,0,0,0.06);
+    }
+  </style>
 </head>
 <body>
-      <header class="site-header" role="banner">
+  <header class="site-header">
     <div class="container header-inner">
       <div class="logo">Flavour<span>Junction</span></div>
-      <nav class="nav-links" role="navigation" aria-label="Main navigation">
-        <a href="#">Home</a>
-        <a href="cart.html">Cart</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="cart.html" aria-current="page">Cart</a>
         <a href="contact.html">Contact</a>
         <a href="about.html">About</a>
       </nav>
-      <div class="header-actions">
-        <button class="btn" type="button">Login</button>
-      </div>
     </div>
   </header>
-    <div>
-            <h3>Order Summary Table</h3>
-            <table class="table" aria-describedby="order-caption">
-              <caption id="order-caption" class="caption-top">Order 001 — Summary</caption>
-              <thead>
-                <tr>
-                  <th>Item</th>
-                  <th>Qty</th>
-                  <th>Price</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Veg Biryani</td>
-                  <td>1</td>
-                  <td>₹220</td>
-                </tr>
-                <tr>
-                  <td>Cheese Burger</td>
-                  <td>2</td>
-                  <td>₹320</td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td colspan="2">Total</td>
-                  <td>₹540</td>
-                </tr>
-              </tfoot>
-            </table>
-
+  <main class="container">
+    <h1>Your Cart</h1>
+    <section class="card">
+      <table class="table">
+        <caption>Order Summary</caption>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Veg Biryani</td>
+            <td>1</td>
+            <td>₹220</td>
+          </tr>
+          <tr>
+            <td>Cheese Burger</td>
+            <td>2</td>
+            <td>₹320</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Subtotal</td>
+            <td>₹540</td>
+          </tr>
+          <tr>
+            <td colspan="2">Delivery</td>
+            <td>₹30</td>
+          </tr>
+          <tr>
+            <td colspan="2"><strong>Total</strong></td>
+            <td><strong>₹570</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+      <div class="actions">
+        <button class="btn btn-order" type="button">Order Items</button>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    ESTD. 2024 Flavour Junction | Designed by Mahabir Shaw
+  </footer>
 </body>
 </html>

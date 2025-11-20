@@ -31,60 +31,64 @@
         .section-title {
             font-weight: 800;
             margin-bottom: 0.6rem;
+            margin-left: 10px;
             position: relative;
         }
         .section-title::after {
-          content: "";
           width: 48px;
           height: 5px;
           border-radius: 4px;
           display: block;
           margin-top: 6px;
         }
+        .btn {
+          padding: 8px 12px;
+          border-radius: 6px;
+          cursor: pointer;
+          font-weight: 700;
+        }
+        .btn-feedback {
+        background: #ff6f3c;
+        color: #fff;
+        border: none;
+        margin-top: 20px;
+        margin-left: 500px;
+        }
     </style>
 </head>
 <body>
-    <header class="site-header" role="banner">
+    <header class="site-header">
     <div class="container header-inner">
       <div class="logo">Flavour<span>Junction</span></div>
-      <nav class="nav-links" role="navigation" aria-label="Main navigation">
-        <a href="#">Home</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
         <a href="cart.html">Cart</a>
         <a href="contact.html">Contact</a>
         <a href="about.html">About</a>
       </nav>
-      <div class="header-actions">
-        <button class="btn" type="button">Login</button>
-      </div>
-    </div>
   </header>
-    <section class="extras" aria-label="Forms, table and media examples">
+    <section class="extras">
       <div class="container">
-        <h2 class="section-title">Contact & Demo Elements</h2>
-
+        <h2 class="section-title">Submit your Review, Feedback or Complaint</h2>
         <div class="grid-2">
           <div>
-            <form action="#" method="post" class="contact-form">
+            <form method="post" class="contact-form">
               <fieldset>
                 <legend>Contact Us</legend>
-
                 <label for="name">Name</label>
                 <input id="name" name="name" type="text" required />
-
                 <label for="email">Email</label>
-                <input id="email" name="email" type="email" required />
-
+                <input id="email" name="email" type="email" placeholder="abc@example.com" required />
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="4"></textarea>
-
                 <label for="reason">Reason</label>
-                <select id="reason" name="reason">
-                  <option value="">Choose</option>
+                <select id="reason" name="reason" required>
+                  <option>Choose</option>
                   <option value="feedback">Feedback</option>
                   <option value="issue">Report an issue</option>
                   <option value="other">Other</option>
                 </select>
-                <button type="submit" class="btn">Send</button>
+                <button type="submit" class="btn btn-feedback">Send</button>
               </fieldset>
             </form>
 </body>
