@@ -6,14 +6,11 @@
   <title>Flavour Junction — Cart</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-
-    .btn {
+    .btn-order {
       padding: 8px 12px;
       border-radius: 6px;
       cursor: pointer;
       font-weight: 700;
-    }
-    .btn-order {
       background: #ff6f3c;
       color: #fff;
       border: none;
@@ -22,8 +19,6 @@
     }
     .table {
       width: 100%;
-      border-collapse: collapse;
-      margin-top: 12px;
     }
     .table th,
     .table td {
@@ -40,23 +35,6 @@
       font-weight: 700;
       margin-bottom: 20px;
     }
-
-    .total-box {
-      margin-top: 14px;
-      padding: 14px;
-      border: 1px solid rgba(0,0,0,0.06);
-      border-radius: 8px;
-    }
-    .total-text {
-      font-weight: 800;
-      font-size: 1.1rem;
-    }
-
-    .actions {
-      margin-top: 12px;
-      display: flex;
-      gap: 10px;
-    }
     .site-footer {
       margin-top: 240px;
       padding-top: 18px;
@@ -72,7 +50,7 @@
       <div class="logo">Flavour<span>Junction</span></div>
       <nav class="nav-links">
         <a href="index.html">Home</a>
-        <a href="cart.html" aria-current="page">Cart</a>
+        <a href="cart.html">Cart</a>
         <a href="contact.html">Contact</a>
         <a href="about.html">About</a>
       </nav>
@@ -117,7 +95,7 @@
           </tr>
         </tfoot>
       </table>
-      <div class="actions">
+      <div>
         <button class="btn btn-order" type="button">Order Items</button>
       </div>
     </section>
