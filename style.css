@@ -72,10 +72,6 @@ html, body {
   margin-bottom: 30px;
   color: #666;
 }
-@keyframes fadeIn {
-  from {transform: translateY(6px);}
-  to {transform: translateY(0);}
-}
 .search-bar {
   display: flex;
   gap: 5px;
